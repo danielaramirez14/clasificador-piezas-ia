@@ -1,2 +1,14 @@
-# -clasificador-piezas-ia
-Este es mi proyecto
+# Clasificador de piezas - Material
+
+Proyecto del curso Inteligencia Artificial.
+
+- Alumno: Daniela Elizabeth Ramírez Alvarado
+- Código: 220398884
+- Dominio: clasificación por material (madera, metal, plástico)
+
+## Descripción
+
+Sistema que lee señales de sensores mientras una pieza pasa frente a ellos,
+clasifica de qué tipo es con un modelo de aprendizaje de máquina y acciona
+un actuador para enrutarla. Crece semana a semana con los temas del curso:
+adquisición, características, clasificación, anomalías y despliegue en PLC.
