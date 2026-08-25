@@ -1,4 +1,4 @@
-# Clasificador de piezas - Material
+# Clasificador de piezas - Color, Estado, y Tamaño
 
 Proyecto del curso Inteligencia Artificial.
 
