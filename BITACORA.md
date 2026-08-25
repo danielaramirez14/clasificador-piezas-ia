@@ -4,11 +4,11 @@
 
 ### Antes de la clase
 
-*BLOQUE 1*
+#### BLOQUE 1
 
 Creé mi repositorio, agregué la BITACORA.md y el README.md, seguidos de las carpetas "codigo", "datos", y "figuras".
 
-*BLOQUE 2*
+#### BLOQUE 2
 
 1. ¿Cuál es la diferencia entre programar la regla y aprender la regla?
 
@@ -107,7 +107,34 @@ En los tres dominios se sigue el mismo principio:
 
 **Sensor -> adquisición de datos -> modelo de aprendizaje automático -> clasificación -> actuador -> separación de la pieza.**
 
+#### BLOQUE EXTRA
 
+##### Sensor de color: TCS3200
+
+| Dato | TCS3200 |
+| --- | --- |
+| Tipo de salida | Digital por frecuencia |
+| Rango de medición | Canales rojo, verde, azul y claro; respuesta espectral aproximada de 300 a 1100 nm |
+| Tiempo de respuesta | Un periodo de la nueva frecuencia + 1 µs |
+| Voltaje de alimentación | 2.7 a 5.5 V |
+
+##### Sensor de tamaño: HC-SR04
+
+| Dato | HC-SR04 |
+| --- | --- |
+| Tipo de salida | Digital por pulso |
+| Rango de medición | 2 a 400 cm |
+| Tiempo de respuesta | Se recomienda un intervalo mayor a 60 ms entre mediciones |
+| Voltaje de alimentación | 5 V DC |
+
+##### Sensor de estado: TCRT5000
+
+| Dato | TCRT5000 |
+| --- | --- |
+| Tipo de salida | Analógica mediante fototransistor; algunos módulos también ofrecen salida digital |
+| Rango de medición | 0.2 a 15 mm; distancia óptima aproximada de 2.5 mm |
+| Tiempo de respuesta | No especificado en el datasheet oficial; módulos comerciales suelen indicar menos de 1 ms |
+| Voltaje de alimentación | El módulo para Arduino normalmente trabaja con 3.3 a 5 V |
 
 ### Avance del proyecto
 
