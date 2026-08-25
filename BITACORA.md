@@ -138,7 +138,8 @@ En los tres dominios se sigue el mismo principio:
 
 ### Avance del proyecto
 
-Proyecto sin definir por el momento.
+Preparé mi entorno de Python con las bibliotecas del curso y creé este
+repositorio. Elegí clasificar por color, tamaño, y estado, por mi conocimiento previo de estos sensores y variedad de opciones.
 
 
 Logré hacer push
