@@ -169,8 +169,11 @@ rojo,verde,azul,distancia_cm,superficie
 2. Tres líneas de ejemplo tal como se van a ver saliendo de tu Arduino, con valores plausibles para tu caso.
 
 24,73,81,8.40,762
+
 58,27,69,12.75,515
+
 70,65,22,18.30,301
+
 
 3. Por qué el Arduino no puede mandar Serial.println("Leyendo...").
 No se deben enviar mensajes como “Leyendo...” porque todo lo que el Arduino escribe en el puerto serial también lo recibe el programa de Python. Como el programa estará preparado para interpretar números de los sensores, recibir una palabra podría provocar un error y detener la lectura de los datos. Por eso, el Arduino solamente enviará los valores obtenidos por los sensores, separados por comas.
