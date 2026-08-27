@@ -136,6 +136,45 @@ En los tres dominios se sigue el mismo principio:
 | Tiempo de respuesta | No especificado en el datasheet oficial; módulos comerciales suelen indicar menos de 1 ms |
 | Voltaje de alimentación | El módulo para Arduino normalmente trabaja con 3.3 a 5 V |
 
+## Semana 2 - La primera señal del sensor
+
+### Antes de la clase
+
+#### BLOQUE 1
+
+1. Qué sensor vas a usar y qué tipo de salida tiene.
+
+Debido a que realizaré individualmente los tres dominios del clasificador,
+utilizaré tres sensores:
+* El TCS3200 para el dominio de color, con las clases roja, verde y azul.
+* El HC-SR04 para el dominio de tamaño, con las clases chica, mediana y grande.
+* El TCRT5000 para el dominio de estado superficial, con las clases lisa, marcada y rayada.
+El TCS3200 tiene una salida en forma de pulsos. Para obtener información del
+color se miden por separado los canales rojo, verde y azul mediante la
+función "pulseIn()".
+
+El HC-SR04 también funciona mediante pulsos. El Arduino envía un pulso por
+el pin TRIG y mide mediante el pin ECHO cuánto tarda el sonido en regresar.
+Con esa duración se calcula la distancia en centímetros.
+
+El TCRT5000 se utilizará con salida analógica. Su señal se leerá en el pin
+A0 mediante "analogRead()", obteniendo un valor entre 0 y 1023 relacionado
+con la cantidad de luz infrarroja reflejada por la superficie.
+
+Como los tres sensores se integrarán en el mismo sistema, cada línea
+contendrá cinco valores separados por comas, con el siguiente formato:
+
+rojo,verde,azul,distancia_cm,superficie
+
+2. Tres líneas de ejemplo tal como se van a ver saliendo de tu Arduino, con valores plausibles para tu caso.
+
+24,73,81,8.40,762
+58,27,69,12.75,515
+70,65,22,18.30,301
+
+3. Por qué el Arduino no puede mandar Serial.println("Leyendo...").
+No se deben enviar mensajes como “Leyendo...” porque todo lo que el Arduino escribe en el puerto serial también lo recibe el programa de Python. Como el programa estará preparado para interpretar números de los sensores, recibir una palabra podría provocar un error y detener la lectura de los datos. Por eso, el Arduino solamente enviará los valores obtenidos por los sensores, separados por comas.
+
 ### Avance del proyecto
 
 Preparé mi entorno de Python con las bibliotecas del curso y creé este
