@@ -12,9 +12,9 @@ Proyecto del curso Inteligencia Artificial.
 Sistema de clasificación de piezas mediante una banda transportadora y diferentes sensores. El proyecto utiliza tres dominios de clasificación: color, tamaño y estado superficial de las piezas.
 
 Para cada dominio se utilizará un sensor diferente:
-* TCS3200: clasificación por color.
-* HC-SR04: clasificación por tamaño.
-* TCRT5000: clasificación por estado de la superficie.
+* TCS3200: clasificación por color (rojo, verde, azul).
+* HC-SR04: clasificación por tamaño (chica, mediana, grande).
+* TCRT5000: clasificación por estado de la superficie (lisa, marcada, rayada).
 
 Los sensores obtienen mediciones mientras las piezas pasan por la banda transportadora. Estos datos se utilizan como entrada para modelos de aprendizaje de máquina, encargados de identificar a qué clase pertenece cada pieza.
 
