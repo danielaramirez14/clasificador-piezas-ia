@@ -160,5 +160,5 @@ void loop() {
   Serial.println(superficie);
 
   // Valor provisional solicitado en el Bloque 1
-  delay(10);
+  delay(60);
 }

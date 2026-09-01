@@ -178,10 +178,28 @@ rojo,verde,azul,distancia_cm,superficie
 3. Por qué el Arduino no puede mandar Serial.println("Leyendo...").
 No se deben enviar mensajes como “Leyendo...” porque todo lo que el Arduino escribe en el puerto serial también lo recibe el programa de Python. Como el programa estará preparado para interpretar números de los sensores, recibir una palabra podría provocar un error y detener la lectura de los datos. Por eso, el Arduino solamente enviará los valores obtenidos por los sensores, separados por comas.
 
+#### BLOQUE 2
+
+1. ¿Cuánto tarda tu pieza en cruzar frente al sensor? Es una estimación, mídelo a ojo o con el cronómetro del celular.
+
+Se estimó que cada pieza tardará aproximadamente 1.5 segundos en pasar frente a los sensores.
+Para obtener por lo menos 20 muestras durante el evento se realizó el siguiente cálculo:
+
+delay máximo = 1500 ms / 20 muestras = 75 ms
+
+2. Con ese tiempo, ¿qué delay() eliges para tener al menos 20 muestras del evento?
+
+Se eligió un delay de 60 ms debido a que permite obtener más de 20 muestras y respeta aproximadamente el tiempo requerido por el sensor ultrasónico HC-SR04.
+
+3. ¿Cuántas muestras te da eso mientras la pieza pasa?
+
+Aproximadamente 25 muestras.
+
 ### Avance del proyecto
 
 Preparé mi entorno de Python con las bibliotecas del curso y creé este
 repositorio. Elegí clasificar por color, tamaño, y estado, por mi conocimiento previo de estos sensores y variedad de opciones.
+Comencé a realizar simulaciones con las lecturas de datos utilizando los sensores para mi pproyecto. Calculé el delay que necesitaré y cuántas muestras me da.
 
 
 Logré hacer push
