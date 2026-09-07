@@ -324,12 +324,14 @@ Se marcarán con cinta el inicio y el final de un recorrido de 20 cm sobre la me
 - El HC-SR04 se colocará a una altura fija de 20 cm respecto a la mesa y la pieza pasará directamente por debajo de él.
 
 
-
 ### Avance del proyecto
 
 Preparé mi entorno de Python con las bibliotecas del curso y creé este
 repositorio. Elegí clasificar por color, tamaño, y estado, por mi conocimiento previo de estos sensores y variedad de opciones.
 Comencé a realizar simulaciones con las lecturas de datos utilizando los sensores para mi pproyecto. Calculé el delay que necesitaré y cuántas muestras me da.
+Definí la estructura del dataset que utilizaré para guardar las mediciones de los sensores. Establecí los nombres de las columnas y las etiquetas correspondientes a las clases de color, tamaño y estado de la superficie. Elaboré el protocolo de recolección de datos. Establecí capturar 30 ventanas por cada clase de manera alternada. También definí un recorrido de 20 cm en aproximadamente 4 segundos.
+Se sigue en espera a probar los sensores en clase ya que no habían llegado.
+
 
 
 Logré hacer push
