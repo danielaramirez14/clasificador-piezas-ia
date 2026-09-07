@@ -195,6 +195,107 @@ Se eligió un delay de 60 ms debido a que permite obtener más de 20 muestras y 
 
 Aproximadamente 25 muestras.
 
+## Semana 3 - Recolección de datos etiquetados (U2)
+
+### Antes de la clase
+
+#### BLOQUE 1: diseño del dataset etiquetado
+
+1. Las columnas exactas de `datos.csv`, con el nombre de cada una y qué guarda
+
+Como el proyecto trabaja con tres dominios de clasificación y utiliza un sensor diferente para cada uno, se diseñará un archivo de datos para color, otro para tamaño y otro para estado superficial.
+
+Para el dominio de color, el archivo `datos/datos_color.csv` tendrá las siguientes columnas:
+
+* `ventana`: guarda el número que identifica cada pasada completa de una pieza frente al sensor.
+* `t`: guarda el número de la muestra dentro de la ventana, comenzando desde cero.
+* `rojo`: guarda la lectura obtenida con el filtro rojo del sensor TCS3200.
+* `verde`: guarda la lectura obtenida con el filtro verde del sensor TCS3200.
+* `azul`: guarda la lectura obtenida con el filtro azul del sensor TCS3200.
+* `etiqueta`: guarda el color conocido de la pieza que fue presentada al sensor.
+
+Para el dominio de tamaño, el archivo `datos/datos_tamano.csv` tendrá las siguientes columnas:
+
+* `ventana`: guarda el número que identifica cada pasada completa de una pieza frente al sensor.
+* `t`: guarda el número de la muestra dentro de la ventana, comenzando desde cero.
+* `distancia_cm`: guarda la distancia en centímetros medida por el sensor ultrasónico HC-SR04.
+* `etiqueta`: guarda el tamaño conocido de la pieza que fue presentada al sensor.
+
+Para el dominio de estado superficial, el archivo `datos/datos_estado.csv` tendrá las siguientes columnas:
+
+* `ventana`: guarda el número que identifica cada pasada completa de una pieza frente al sensor.
+* `t`: guarda el número de la muestra dentro de la ventana, comenzando desde cero.
+* `reflectancia`: guarda la lectura analógica obtenida con el sensor infrarrojo TCRT5000.
+* `etiqueta`: guarda el estado conocido de la superficie de la pieza.
+
+2. Las tres etiquetas, escritas tal como aparecerán en el archivo
+
+Para evitar que las etiquetas de los tres módulos se repitan o se confundan, se utilizará un prefijo que permita identificar el dominio al que pertenece cada una.
+
+Las tres etiquetas correspondientes al dominio de color serán:
+
+* `color_rojo`
+* `color_verde`
+* `color_azul`
+
+Las tres etiquetas correspondientes al dominio de tamaño serán:
+
+* `tamano_chica`
+* `tamano_mediana`
+* `tamano_grande`
+
+Las tres etiquetas correspondientes al dominio de estado superficial serán:
+
+* `estado_lisa`
+* `estado_marcada`
+* `estado_rayada`
+
+Todas las etiquetas están escritas en minúsculas, sin espacios y sin acentos.
+
+3. Cinco filas de ejemplo de cada tabla, con valores plausibles para el sensor
+
+Las siguientes son cinco filas de ejemplo para el archivo `datos/datos_color.csv`:
+
+```csv
+ventana,t,rojo,verde,azul,etiqueta
+0,0,42,118,105,color_rojo
+0,1,40,121,108,color_rojo
+0,2,43,117,104,color_rojo
+0,3,41,119,107,color_rojo
+0,4,39,120,106,color_rojo
+```
+
+En este ejemplo, todas las filas pertenecen a la ventana número 0 y representan muestras consecutivas de una misma pieza roja. Las columnas `rojo`, `verde` y `azul` contienen las lecturas de los tres filtros del sensor TCS3200.
+
+Las siguientes son cinco filas de ejemplo para el archivo `datos/datos_tamano.csv`:
+
+```csv
+ventana,t,distancia_cm,etiqueta
+0,0,18.4,tamano_chica
+0,1,18.2,tamano_chica
+0,2,17.9,tamano_chica
+0,3,18.1,tamano_chica
+0,4,18.3,tamano_chica
+```
+
+En este ejemplo, todas las filas pertenecen a la ventana número 0 y representan muestras consecutivas de una misma pieza chica. La columna `distancia_cm` contiene la distancia medida por el sensor HC-SR04.
+
+Las siguientes son cinco filas de ejemplo para el archivo `datos/datos_estado.csv`:
+
+```csv
+ventana,t,reflectancia,etiqueta
+0,0,724,estado_lisa
+0,1,719,estado_lisa
+0,2,727,estado_lisa
+0,3,722,estado_lisa
+0,4,725,estado_lisa
+```
+
+En este ejemplo, todas las filas pertenecen a la ventana número 0 y representan muestras consecutivas de una misma pieza con superficie lisa. La columna `reflectancia` contiene la lectura analógica obtenida con el sensor TCRT5000.
+
+Estos valores se utilizaron únicamente como ejemplos plausibles para diseñar la estructura de los archivos. Durante la recolección se sustituirán por las lecturas obtenidas directamente de cada sensor.
+
+
 ### Avance del proyecto
 
 Preparé mi entorno de Python con las bibliotecas del curso y creé este
