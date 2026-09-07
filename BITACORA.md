@@ -295,13 +295,6 @@ En este ejemplo, todas las filas pertenecen a la ventana número 0 y representan
 
 Estos valores se utilizaron únicamente como ejemplos plausibles para diseñar la estructura de los archivos. Durante la recolección se sustituirán por las lecturas obtenidas directamente de cada sensor.
 
-
-### Avance del proyecto
-
-Preparé mi entorno de Python con las bibliotecas del curso y creé este
-repositorio. Elegí clasificar por color, tamaño, y estado, por mi conocimiento previo de estos sensores y variedad de opciones.
-Comencé a realizar simulaciones con las lecturas de datos utilizando los sensores para mi pproyecto. Calculé el delay que necesitaré y cuántas muestras me da.
-
 #### BLOQUE 2
 
 1. ¿Cuántas ventanas por clase vas a capturar?
@@ -329,6 +322,15 @@ Se marcarán con cinta el inicio y el final de un recorrido de 20 cm sobre la me
 - Frente al TCS3200, la superficie de la pieza pasará a 1 cm del sensor.
 - Frente al TCRT5000, la superficie pasará aproximadamente a 2.5 mm del sensor.
 - El HC-SR04 se colocará a una altura fija de 20 cm respecto a la mesa y la pieza pasará directamente por debajo de él.
+
+
+
+### Avance del proyecto
+
+Preparé mi entorno de Python con las bibliotecas del curso y creé este
+repositorio. Elegí clasificar por color, tamaño, y estado, por mi conocimiento previo de estos sensores y variedad de opciones.
+Comencé a realizar simulaciones con las lecturas de datos utilizando los sensores para mi pproyecto. Calculé el delay que necesitaré y cuántas muestras me da.
+
 
 Logré hacer push
 
