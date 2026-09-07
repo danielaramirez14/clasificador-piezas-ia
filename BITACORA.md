@@ -302,7 +302,33 @@ Preparé mi entorno de Python con las bibliotecas del curso y creé este
 repositorio. Elegí clasificar por color, tamaño, y estado, por mi conocimiento previo de estos sensores y variedad de opciones.
 Comencé a realizar simulaciones con las lecturas de datos utilizando los sensores para mi pproyecto. Calculé el delay que necesitaré y cuántas muestras me da.
 
+#### BLOQUE 2
 
+1. ¿Cuántas ventanas por clase vas a capturar?
+
+Se capturarán 30 ventanas por cada clase. Como el proyecto tiene nueve clases, se obtendrán 270 ventanas en total:
+
+- Color: `color_rojo`, `color_verde` y `color_azul`.
+- Tamaño: `tamano_chica`, `tamano_mediana` y `tamano_grande`.
+- Estado: `estado_lisa`, `estado_marcada` y `estado_rayada`.
+
+2. ¿En qué orden?
+
+Las clases se capturarán de manera alternada en 30 rondas, siguiendo este orden:
+
+`color_rojo -> color_verde -> color_azul -> tamano_chica -> tamano_mediana -> tamano_grande -> estado_lisa -> estado_marcada -> estado_rayada`
+
+En cada ronda se capturará una ventana de cada clase.
+
+3. ¿Cómo vas a mantener pareja la velocidad de la mano?
+
+Se marcarán con cinta el inicio y el final de un recorrido de 20 cm sobre la mesa. Se dividirá en 4 secciones (se marcará con otra cinta) y será como un "checkpoint" al que debo llegar cada segundo. Es decir, en total recorreré la cinta en 4 segundos.
+
+4. ¿A qué distancia del sensor va a pasar la pieza?
+
+- Frente al TCS3200, la superficie de la pieza pasará a 1 cm del sensor.
+- Frente al TCRT5000, la superficie pasará aproximadamente a 2.5 mm del sensor.
+- El HC-SR04 se colocará a una altura fija de 20 cm respecto a la mesa y la pieza pasará directamente por debajo de él.
 
 Logré hacer push
 
