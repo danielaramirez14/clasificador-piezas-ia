@@ -303,6 +303,7 @@ repositorio. Elegí clasificar por color, tamaño, y estado, por mi conocimiento
 Comencé a realizar simulaciones con las lecturas de datos utilizando los sensores para mi pproyecto. Calculé el delay que necesitaré y cuántas muestras me da.
 
 
+
 Logré hacer push
 
 Procedimiento para hacer push
