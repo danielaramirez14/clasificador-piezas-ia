@@ -17,3 +17,6 @@ Elegiste tres dominios (color, tamaño y estado), cada uno con su propio sensor,
 
 ### Nota rápida (2026-09-14) - s03
 Tu diseño del bloque 1 y 2 está muy completo, pero cubre tres dominios a la vez (color, tamaño y estado superficial), con nueve etiquetas y 270 ventanas planeadas en total. El proyecto individual es un solo dominio de clasificación con tres clases (como los demás compañeros: madera/metal/plástico, chica/mediana/grande, etc.), no tres dominios en paralelo. Entiendo que es por el interés en varios sensores, pero mantener tres pipelines completos (captura, limpieza, features, modelo) para uno solo ya es bastante trabajo semana a semana; vale la pena platicarlo antes de que el triple esfuerzo te vaya atrasando frente al resto del curso. Si quieres explorar los tres sensores, puede quedar como algo aparte del entregable semanal.
+
+### Nota rápida (2026-09-14) - s04
+No veo commits de la semana 04 (`s04 bloque 1`/`s04 bloque 2`). Si tuviste un problema, cuéntamelo para que quede en la bitácora.
