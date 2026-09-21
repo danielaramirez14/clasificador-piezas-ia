@@ -323,6 +323,9 @@ Se marcarán con cinta el inicio y el final de un recorrido de 20 cm sobre la me
 - Frente al TCRT5000, la superficie pasará aproximadamente a 2.5 mm del sensor.
 - El HC-SR04 se colocará a una altura fija de 20 cm respecto a la mesa y la pieza pasará directamente por debajo de él.
 
+#### Corrección de REVISION.md
+
+Comencé a trabajar en las semanas faltantes y traté de buscar una mejor organización de los datos de mis sensores. 
 
 ### Avance del proyecto
 
