@@ -20,3 +20,6 @@ Tu diseño del bloque 1 y 2 está muy completo, pero cubre tres dominios a la ve
 
 ### Nota rápida (2026-09-14) - s04
 No veo commits de la semana 04 (`s04 bloque 1`/`s04 bloque 2`). Si tuviste un problema, cuéntamelo para que quede en la bitácora.
+
+### Nota rápida (2026-09-21) - s05
+No veo commits de la semana 05 (`s05 bloque 1`/`s05 bloque 2`). Si tuviste un problema, cuéntamelo para que quede en la bitácora.
