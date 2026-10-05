@@ -323,6 +323,40 @@ Se marcarán con cinta el inicio y el final de un recorrido de 20 cm sobre la me
 - Frente al TCRT5000, la superficie pasará aproximadamente a 2.5 mm del sensor.
 - El HC-SR04 se colocará a una altura fija de 20 cm respecto a la mesa y la pieza pasará directamente por debajo de él.
 
+## Semana 4
+
+
+## Semana 5 
+
+
+## Semana 6
+
+### Antes de la clase
+
+#### BLOQUE 1
+
+1. Tu frecuencia de muestreo (la que quedó en tu sensor.ino después de la semana 2):
+En la Semana 2 se estableció un delay() de 60 ms entre muestras. Por lo tanto, la frecuencia de muestreo es:
+
+[
+f_s=\frac{1}{0.060}=16.67\text{ Hz}
+]
+
+2. Tu frecuencia de Nyquist, y qué significa para tu señal:
+La frecuencia de Nyquist corresponde a la mitad de la frecuencia de muestreo:
+
+[
+f_N=\frac{16.67}{2}=8.33\text{ Hz}
+]
+
+Esto significa que el sistema puede representar correctamente componentes de la señal de hasta aproximadamente 8.33 Hz. Las frecuencias superiores pueden producir aliasing y ser representadas incorrectamente.
+
+3. Tu resolución con el largo de ventana que usas.
+
+4. Tu predicción: ¿esperas que tus clases se distingan en frecuencia? ¿Por qué sí o por qué no?
+
+
+
 #### Corrección de REVISION.md
 
 Comencé a trabajar en las semanas faltantes y traté de buscar una mejor organización de los datos de mis sensores. 
