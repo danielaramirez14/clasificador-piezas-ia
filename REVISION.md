@@ -23,3 +23,9 @@ No veo commits de la semana 04 (`s04 bloque 1`/`s04 bloque 2`). Si tuviste un pr
 
 ### Nota rápida (2026-09-21) - s05
 No veo commits de la semana 05 (`s05 bloque 1`/`s05 bloque 2`). Si tuviste un problema, cuéntamelo para que quede en la bitácora.
+
+### Nota rápida (2026-10-19) - s06
+Tu bloque 1 quedó a medias: respondiste frecuencia de muestreo y Nyquist, pero los puntos 3 (resolución) y 4 (predicción) están vacíos, y no hay nada del bloque 2 (ni FFT, ni features espectrales, ni `figuras/espectro.png`). Por el texto de "Avance del proyecto" todavía estás en la etapa de captura con tus tres sensores, lo cual tiene sentido dado que vas tripicando ese trabajo (color, tamaño y estado superficial) frente al resto del grupo que lleva un solo sensor. Dicho eso, completar la bitácora no depende de cuántos sensores lleves: termina los puntos 3 y 4 del bloque 1 con lo que ya sabes de tu `sensor.ino`, y en cuanto tengas aunque sea un `datos_limpios.csv` de un dominio, corre el bloque 2 sobre ese para no seguir acumulando semanas pendientes.
+
+### Nota rápida (2026-10-19) - s07
+No veo commits de la semana 07 (`s07 bloque 1`/`s07 bloque 2`). Si tuviste un problema, cuéntamelo para que quede en la bitácora.
